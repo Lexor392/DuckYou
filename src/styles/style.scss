@@ -1,0 +1,1631 @@
+@font-face {
+    font-family: 'Sonic 1 Title Screen Filled';
+    src: url('../fonts/sonic1-title-screen/sonic1-title-screen-filled.ttf');
+}
+
+@font-face {
+    font-family: 'LeviBrush';
+    src: url('../fonts/levi-brush/LEVIBRUSH.TTF');
+}
+
+@font-face {
+    font-family: 'Pixeleum 48';
+    src: url('../fonts/pixeleum-48/pixeleum-48.ttf');
+}
+
+// html {
+//     overflow-x: hidden;
+// }
+
+.yel-txt {
+    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.burger-menu {
+    position: fixed;
+    top: -500px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active {
+    top: 0;
+    visibility: visible;
+    background-color: #3A005E;
+}
+
+.px48 {
+    font-family: 'Pixeleum 48';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76.367px;
+    line-height: 107px;
+    text-align: center;
+    letter-spacing: 0.045em;
+    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.container {
+    max-width: 1614px;
+}
+
+.btn {
+    border: none;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+.modal.index {
+    z-index: 0;
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background: url(../images/burger-menu-bg.png) no-repeat center / 100% 100%;
+
+            .modal-header {
+                border: none;
+                margin-bottom: -28px;
+
+                .navbar-brand {
+                    font-family: 'Sonic 1 Title Screen Filled';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 35px;
+                    background: linear-gradient(93.54deg, #FFEA2F 1.28%, #FFB30B 98.83%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+
+                    .d-inline-block {
+                        margin-right: 12.79px;
+                        width: 44px;
+                    }
+                }
+
+                .btn-close {
+                    margin-right: 7px;
+                    width: 26.94px;
+                    height: 26.94px;
+                    background: url(../images/btn-close.png) no-repeat center;
+                }
+            }
+
+            .modal-body {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            position: relative;
+                            z-index: 1;
+                            padding: 0;
+                            text-align: center;
+
+                            .nav-link-border {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                transition: all 0.3s ease;
+                            }
+
+                            span {
+                                transition: all 0.3s ease;
+                                font-family: 'Sonic 1 Title Screen Filled';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 28px;
+                                text-align: center;
+                                background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                                position: relative;
+                                z-index: 1;
+                            }
+                        }
+                    }
+
+                    .nav-item:hover {
+                        .nav-link {
+                            span {
+                                background: linear-gradient(144.23deg, #ffffff 14.88%, #ffffff 86.41%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                            }
+                        }
+                    }
+
+                    .nav-item1 .nav-link {
+                        padding: 22px 22px 26px 22px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border1.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item2 .nav-link {
+                        padding: 22px 21px 26px 21px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border2.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item3 .nav-link {
+                        padding: 22px 20px 26px 20px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border3.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item4 .nav-link {
+                        padding: 22px 22px 26px 22px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border4.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item5 .nav-link {
+                        padding: 22px 30px 26px 30px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border5.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item1:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg1.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item2:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg2.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item3:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg3.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item4:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg4.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item5:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg5.png) no-repeat center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body .main .section01 .container .block-img img {
+    transition: all 0.3s ease;
+}
+
+body .main .section01 .container .block-img img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+body {
+    background: #400061;
+
+    .duck1 {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 884px;
+    }
+
+    .duck2 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 1908px;
+    }
+
+    .duck3 {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 2746px;
+    }
+
+    .duck4 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 3638px;
+    }
+
+    .duck5 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 60px;
+    }
+
+    .duck6 {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+    }
+
+    .duck7 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 578px;
+    }
+
+    .duck8 {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 698px;
+    }
+
+    .body-bg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 7265px;
+        background: url(../images/background1.png) no-repeat top center/100% 2458px,
+            url(../images/background2.png) no-repeat top 2398px center/100%;
+        mix-blend-mode: overlay;
+        filter: blur(15.5px);
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 5;
+        padding-top: 0;
+
+        .container {
+            max-width: 1080px;
+            height: 138px;
+            position: relative;
+            padding: 0 35px;
+
+            .navbar-border {
+                position: absolute;
+                top: 0px;
+                left: -5px;
+                z-index: 1;
+                width: 1090px;
+                height: 143px;
+                background: url(../images/section01/navbar-border.png) no-repeat center bottom / cover;
+            }
+
+            .navbar-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(87, 87, 87, 0.51);
+                backdrop-filter: blur(12.5px);
+                border-bottom-left-radius: 18px;
+                border-bottom-right-radius: 18px;
+            }
+
+            .navbar-brand {
+                font-family: 'Sonic 1 Title Screen Filled';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 35px;
+                background: linear-gradient(93.54deg, #FFEA2F 1.28%, #FFB30B 98.83%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+
+                .d-inline-block {
+                    margin-right: 12.79px;
+                }
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            position: relative;
+                            z-index: 1;
+                            padding: 0;
+
+                            .nav-link-border {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                transition: all 0.3s ease;
+                            }
+
+                            span {
+                                transition: all 0.3s ease;
+                                font-family: 'Sonic 1 Title Screen Filled';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 28px;
+                                text-align: center;
+                                background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                                position: relative;
+                                z-index: 1;
+                            }
+                        }
+                    }
+
+                    .nav-item:hover {
+                        .nav-link {
+                            span {
+                                background: linear-gradient(144.23deg, #ffffff 14.88%, #ffffff 86.41%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                            }
+                        }
+                    }
+
+                    .nav-item1 .nav-link {
+                        padding: 22px 22px 26px 22px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border1.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item2 .nav-link {
+                        padding: 22px 21px 26px 21px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border2.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item3 .nav-link {
+                        padding: 22px 20px 26px 20px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border3.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item4 .nav-link {
+                        padding: 22px 22px 26px 22px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border4.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item5 .nav-link {
+                        padding: 22px 30px 26px 30px;
+
+                        .nav-link-border {
+                            background: url(../images/section01/nav-item-border5.png) no-repeat center;
+                        }
+                    }
+
+                    .nav-item1:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg1.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item2:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg2.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item3:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg3.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item4:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg4.png) no-repeat center;
+                            }
+                        }
+                    }
+
+                    .nav-item5:hover {
+                        .nav-link {
+                            .nav-link-border {
+                                background: url(../images/section01/nav-item-bg5.png) no-repeat center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-brand,
+            .navbar-toggler,
+            .collapse {
+                position: relative;
+                z-index: 1;
+            }
+
+            .modal-button {
+                width: 33px;
+                height: 19px;
+                background: url(../images/icons/burger-menu.png) no-repeat center;
+            }
+        }
+    }
+
+    .main {
+        position: relative;
+        z-index: 3;
+
+        .section01 {
+            position: relative;
+            margin-top: -110px;
+            z-index: 1;
+            background: url(../images/first-screen-bg.png) no-repeat center top;
+
+            .container {
+                height: 1129px;
+                padding-top: 245px;
+                display: flex;
+                justify-content: space-between;
+
+                .block-content {
+                    position: relative;
+                    width: max-content;
+
+                    .rectangle {
+                        position: absolute;
+                        top: 54px;
+                        z-index: 0;
+                        width: 977px;
+                        height: 100px;
+                        background: #470048;
+                        filter: blur(39.5px);
+                    }
+
+                    .content-title {
+                        position: relative;
+                        z-index: 1;
+                        transform: rotate(-1.86deg);
+                        width: max-content;
+                        height: max-content;
+
+                        .title {
+                            position: relative;
+                            z-index: 1;
+                            font-family: 'Sonic 1 Title Screen Filled';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 100.167px;
+                            line-height: 184px;
+                            text-align: center;
+                            background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+
+                        .title-shadow {
+                            position: absolute;
+                            top: 0;
+                            font-family: 'Sonic 1 Title Screen Filled';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 100.167px;
+                            line-height: 184px;
+                            text-align: center;
+                            color: transparent;
+                            text-shadow: 0px 14.456px 10.842px #3A005E;
+                        }
+                    }
+
+                    .content-subtitle {
+                        width: max-content;
+                        height: max-content;
+                        margin: 0 auto;
+                        margin-top: -50px;
+                        position: relative;
+                        z-index: 3;
+                        transform: rotate(1.68deg);
+
+                        .subtitle {
+                            position: relative;
+                            z-index: 1;
+                            font-family: 'LeviBrush';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 87px;
+                            line-height: 117px;
+                            text-align: center;
+
+                            background: linear-gradient(180deg, #FFFFFF 0%, #FD8DFF 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+
+                        .subtitle-shadow {
+                            position: absolute;
+                            top: 0;
+                            font-family: 'LeviBrush';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 87px;
+                            line-height: 117px;
+                            text-align: center;
+                            color: transparent;
+
+                            text-shadow: 0px 4.64728px 18.5891px #FA00FF;
+                        }
+                    }
+
+                    .content-btn-group {
+                        width: 800px;
+                        margin-bottom: 36px;
+
+                        .group {
+                            display: flex;
+                            margin-top: 40px;
+
+                            a {
+                                margin-right: -6px;
+
+                                .btn {
+                                    width: 280px;
+                                    height: 133px;
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 35px;
+                                    line-height: 42px;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                                    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+                                    transition: all 0.3s ease;
+                                }
+
+                                .btn240 {
+                                    background: url(../images/section01/section01-btn1-bg.png) no-repeat center;
+                                }
+
+                                .btn240:hover {
+                                    background: url(../images/section01/section01-btn1-bg-hover.png) no-repeat center;
+                                }
+
+                                .btn280 {
+                                    padding-bottom: 12px;
+                                    width: 324px;
+                                    background: url(../images/section01/section01-btn2-bg.png) no-repeat center;
+                                }
+
+                                .btn280:hover {
+                                    background: url(../images/section01/section01-btn2-bg-hover.png) no-repeat center;
+                                }
+                            }
+                        }
+                    }
+
+                    .content-contact-btn-group {
+                        .contact-title {
+                            font-family: 'Pixeleum 48';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 35px;
+                            line-height: 49px;
+                            color: #FFFFFF;
+                            margin-bottom: 21px;
+                        }
+
+                        .contact-btn-group {
+                            display: flex;
+
+                            a {
+                                margin-right: -21px;
+
+                                .btn {
+                                    width: 135px;
+                                    height: 133px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: all 0.3s ease;
+                                    background: url(../images/section01/section01-btn.png) no-repeat center;
+                                }
+
+                                .btn:hover {
+                                    background: url(../images/section01/section01-btn-hover.png) no-repeat center;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .block-img {
+                    margin-top: -60px;
+                }
+
+                .contract-code {
+                    width: 100%;
+                    height: 180px;
+                    margin-top: -80px;
+                    padding-bottom: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: url(../images/section01/contract-code-bg2.png) no-repeat center;
+
+                    #toCopy-one {
+                        font-family: 'Pixeleum 48';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.21);
+                    }
+
+                    .button-copy {
+                        margin-left: 19px;
+                        width: 30px;
+                        height: 36px;
+                        border: none;
+                        background: url(../images/section01/code-copy-icon.png) no-repeat center;
+                    }
+                }
+            }
+        }
+
+        .section02 {
+            padding-top: 70px;
+
+            .container {
+                .container-title {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+
+                    .title {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        /* identical to box height */
+
+                        text-align: center;
+
+                        background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .title-shadow {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        /* identical to box height */
+
+                        text-align: center;
+                        color: transparent;
+                        text-shadow: 0px 12px 9px #3A005E;
+                    }
+                }
+
+                .container-subtitle {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+                    margin-top: 54px;
+                    margin-bottom: 73px;
+                    display: flex;
+                    align-items: center;
+
+                    .subtitle {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 58px;
+                        line-height: 91px;
+                        text-align: center;
+
+                        background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .subtitle-shadow {
+                        position: absolute;
+                        top: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 58px;
+                        line-height: 91px;
+                        text-align: center;
+                        color: transparent;
+                        text-shadow: 0px 12px 9px #3A005E;
+                    }
+
+                    span {
+                        margin-left: 23px;
+                        font-family: 'Pixeleum 48';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 42px;
+                        line-height: 59px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .container-cards {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card_ {
+                        position: relative;
+                        width: 520px;
+                        height: 360px;
+                        text-align: center;
+                        background: url(../images/section02/card-bg.png) no-repeat center;
+
+                        .card-title {
+                            position: absolute;
+                            bottom: 61px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            .title {
+                                position: relative;
+                                z-index: 1;
+                                font-family: 'Sonic 1 Title Screen Filled';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 49px;
+                                line-height: 77px;
+                                /* identical to box height */
+
+                                text-align: center;
+                                letter-spacing: 0.045em;
+
+                                background: linear-gradient(180deg, #FFFFFF 0%, #EAEAEA 100%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                            }
+
+                            .title-shadow {
+                                position: absolute;
+                                top: 0;
+                                font-family: 'Sonic 1 Title Screen Filled';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 49px;
+                                line-height: 77px;
+                                color: transparent;
+                                text-align: center;
+                                letter-spacing: 0.045em;
+                                text-shadow: -1px 5px 0px rgba(0, 0, 0, 0.4);
+                            }
+                        }
+                    }
+
+                    .card_1 img {
+                        width: 298px;
+                    }
+
+                    .card_2 img {
+                        width: 216px;
+                    }
+
+                    .card_3 img {
+                        width: 284px;
+                    }
+                }
+            }
+        }
+
+        .section03 {
+            padding-top: 127px;
+
+            .container {
+                .container-title {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+
+                    .title {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        /* identical to box height */
+
+                        text-align: center;
+
+                        background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .title-shadow {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        text-align: center;
+                        color: transparent;
+                        text-shadow: 0px 12px 9px #3A005E;
+                    }
+                }
+
+                .container-subtitle {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+                    margin-top: 131px;
+                    margin-bottom: 89px;
+                    display: flex;
+                    align-items: center;
+
+                    .subtitle {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 49px;
+                        line-height: 77px;
+                        letter-spacing: 0.045em;
+
+                        background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .subtitle-shadow {
+                        position: absolute;
+                        top: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 49px;
+                        line-height: 77px;
+                        letter-spacing: 0.045em;
+                        color: transparent;
+                        text-shadow: 0px 17px 55px rgba(255, 131, 9, 0.7), -1px 5px 0px rgba(0, 0, 0, 0.4);
+                    }
+
+                    .span {
+                        margin-left: 23px;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 49px;
+                        line-height: 77px;
+                        text-align: center;
+                        letter-spacing: 0.045em;
+                        color: #FFFFFF;
+                        margin-top: 0;
+                    }
+
+                    .px48 {
+                        font-family: 'Pixeleum 48';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 76.367px;
+                        line-height: 107px;
+                        text-align: center;
+                        letter-spacing: 0.045em;
+                        background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+
+                .block-contract {
+                    .contract-title {
+                        padding-bottom: 7px;
+                        width: 826px;
+                        margin: 0 auto;
+                        margin-bottom: -100px;
+                        height: 263px;
+                        background: url(../images/section03/contract-title-bg.png) no-repeat center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        z-index: 3;
+
+                        .title {
+                            position: relative;
+                            z-index: 1;
+                            font-family: 'Sonic 1 Title Screen Filled';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 37px;
+                            line-height: 58px;
+                            text-align: center;
+                            letter-spacing: 0.045em;
+
+                            background: linear-gradient(180deg, #FFFFFF 0%, #EAEAEA 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+
+                        .title-shadow {
+                            position: absolute;
+                            font-family: 'Sonic 1 Title Screen Filled';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 37px;
+                            line-height: 58px;
+                            text-align: center;
+                            letter-spacing: 0.045em;
+                            text-shadow: -1px 5px 0px rgba(0, 0, 0, 0.4);
+                        }
+                    }
+
+                    .contract-code {
+                        position: relative;
+                        z-index: 2;
+                        width: 1423.97px;
+                        height: 178px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: url(../images/section03/contract-bg.png) no-repeat center;
+
+                        #toCopy-two {
+                            font-family: 'Pixeleum 48';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 40.6849px;
+                            line-height: 57px;
+                            text-align: center;
+                            background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                            margin-bottom: 12px;
+                        }
+
+                        .button-copy {
+                            margin-left: 40px;
+                            width: 98px;
+                            height: 111px;
+                            border: none;
+                            background: url(../images/section03/icon-copy.png) no-repeat center;
+                        }
+                    }
+                }
+
+                .container-info-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 206px;
+                    margin-bottom: 262.56px;
+
+                    .container-info {
+                        margin-bottom: 83.56px;
+                        position: relative;
+                        width: 700px;
+                        height: 198.44px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .border-right {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            width: 11px;
+                            height: 100%;
+                            background: url(../images/section03/border.png) no-repeat left top;
+                        }
+
+                        .border-right-shadow {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 11px;
+                            height: 100%;
+                            background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                            filter: blur(16px);
+                        }
+
+                        .container-text {
+                            margin-left: 71px;
+
+                            .container-block-title {
+                                position: relative;
+
+                                .title {
+                                    position: relative;
+                                    z-index: 1;
+                                    font-family: 'Sonic 1 Title Screen Filled';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 49px;
+                                    line-height: 77px;
+                                    letter-spacing: 0.045em;
+                                    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+
+                                }
+
+                                .title-shadow {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    font-family: 'Sonic 1 Title Screen Filled';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 49px;
+                                    line-height: 77px;
+                                    letter-spacing: 0.045em;
+                                    color: transparent;
+                                    text-shadow: 0px 17px 55px rgba(255, 131, 9, 0.7), -1px 5px 0px rgba(0, 0, 0, 0.4);
+                                }
+                            }
+
+                            .container-text-subtitle {
+                                position: relative;
+
+                                .title {
+                                    position: relative;
+                                    z-index: 1;
+                                    font-family: 'Pixeleum 48';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 50px;
+                                    line-height: 70px;
+                                    color: #FFFFFF;
+                                }
+
+                                .title-shadow {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    font-family: 'Pixeleum 48';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 50px;
+                                    line-height: 70px;
+                                    color: transparent;
+                                    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.21);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section04 {
+            .container {
+                .container-title {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+                    margin-bottom: 94px;
+
+                    .title {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        /* identical to box height */
+
+                        text-align: center;
+
+                        background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .title-shadow {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        text-align: center;
+                        color: transparent;
+                        text-shadow: 0px 12px 9px #3A005E;
+                    }
+                }
+
+                .container-subtitle {
+                    font-family: 'Sonic 1 Title Screen Filled';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 39px;
+                    line-height: 61px;
+                    text-align: center;
+                    letter-spacing: 0.045em;
+                    color: #FFFFFF;
+
+                    p {
+                        margin-bottom: 80px;
+                    }
+                }
+
+                .container-slider-title {
+                    margin-top: 151px;
+                    margin-bottom: 37px;
+                    font-family: 'Pixeleum 48';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 70px;
+                    text-align: center;
+                    letter-spacing: 0.045em;
+                    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+
+                }
+
+                .container-slider {
+                    margin-bottom: 224px;
+
+                    .slider {
+                        height: 356px;
+
+                        .slick-track {
+                            height: 356px;
+                        }
+                    }
+
+                    .slick-slide {
+                        opacity: 0.7;
+                        transform: scale(0.8);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .slick-center {
+                        opacity: 1;
+                        transform: scale(1);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .slick-arrow {
+                        position: absolute;
+                        width: 97px;
+                        height: 97px;
+                        border: none;
+                        top: 50%;
+                        margin-top: -50px;
+                    }
+
+                    .slick-prev {
+                        left: -97px;
+                        background: url(../images/slider-btn-prev.png) no-repeat center;
+                    }
+
+                    .slick-next {
+                        right: -97px;
+                        background: url(../images/slider-btn-next.png) no-repeat center;
+                    }
+
+                    .slick-prev:hover {
+                        background: url(../images/slider-btn-prev-hover.png) no-repeat center;
+                    }
+
+                    .slick-next:hover {
+                        background: url(../images/slider-btn-next-hover.png) no-repeat center;
+                    }
+
+                }
+            }
+        }
+
+        .section05 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            .duck-group {
+                position: absolute;
+                top: 160px;
+                z-index: 1;
+
+            }
+
+            .container {
+                position: relative;
+                z-index: 3;
+
+                .container-title {
+                    position: relative;
+                    width: max-content;
+                    margin: 0 auto;
+                    margin-bottom: 117px;
+
+                    .title {
+                        position: relative;
+                        z-index: 1;
+
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        /* identical to box height */
+
+                        text-align: center;
+
+                        background: linear-gradient(180deg, #FFFFFF 23.38%, #FFC700 40.11%, #FF7C60 49.29%, #FFFFFF 55.53%, #FFC7C7 61.1%, #FF4B4B 67.34%, #FF007A 73.57%, #FA00FF 79.47%, #FFFFFF 84.4%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+
+                    .title-shadow {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-family: 'Sonic 1 Title Screen Filled';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 98px;
+                        line-height: 154px;
+                        text-align: center;
+                        color: transparent;
+                        text-shadow: 0px 12px 9px #3A005E;
+                    }
+                }
+
+                .container-subtitle {
+                    font-family: 'Sonic 1 Title Screen Filled';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 39px;
+                    line-height: 61px;
+                    text-align: center;
+                    letter-spacing: 0.045em;
+                    color: #FFFFFF;
+
+                    p {
+                        margin-bottom: 80px;
+                    }
+
+                    .px48 {
+                        font-family: 'Pixeleum 48';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 53.5282px;
+                        line-height: 75px;
+                        text-align: center;
+                        letter-spacing: 0.045em;
+                        background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+
+                .container-button-group {
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+                        text-decoration: none;
+
+                        .btn {
+                            width: 420px;
+                            height: 133px;
+                            background: url(../images/btn-bg.png) no-repeat center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.3s ease;
+
+                            .btn-title {
+                                margin-left: 13px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 25px;
+                                line-height: 30px;
+
+                                color: #FFFFFF;
+
+                                text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+                            }
+                        }
+
+                        .btn:hover {
+                            background: url(../images/btn-bg-hover.png) no-repeat center;
+                        }
+                    }
+                }
+
+                .container-slider-title {
+                    margin-top: 151px;
+                    margin-bottom: 37px;
+                    font-family: 'Pixeleum 48';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 70px;
+                    text-align: center;
+                    letter-spacing: 0.045em;
+                    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+
+                }
+
+                .container-slider {
+                    margin-bottom: 224px;
+
+                    .sliderTwo {
+                        height: 356px;
+
+                        .slick-track {
+                            height: 356px;
+                        }
+                    }
+
+                    .slick-slide {
+                        opacity: 0.7;
+                        transform: scale(0.8);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .slick-center {
+                        opacity: 1;
+                        transform: scale(1);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .slick-arrow {
+                        position: absolute;
+                        width: 97px;
+                        height: 97px;
+                        border: none;
+                        top: 50%;
+                        margin-top: -50px;
+                        transition: all 0.3s ease;
+                    }
+
+                    .slick-prev {
+                        left: -97px;
+                        background: url(../images/slider-btn-prev.png) no-repeat center;
+                    }
+
+                    .slick-prev:hover {
+                        background: url(../images/slider-btn-prev-hover.png) no-repeat center;
+                    }
+
+                    .slick-next {
+                        right: -97px;
+                        background: url(../images/slider-btn-next.png) no-repeat center;
+                    }
+
+                    .slick-next:hover {
+                        background: url(../images/slider-btn-next-hover.png) no-repeat center;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        position: relative;
+        z-index: 4;
+
+        .container {
+            .footer-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .text {
+                    font-family: 'Pixeleum 48';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 42px;
+
+                    color: #FFFFFF;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .contacts {
+                    float: right;
+                    text-align: right;
+
+                    .btn-contacts-group {
+                        display: flex;
+
+                        a {
+                            margin-left: -10px;
+                        }
+
+                        .btn:active {
+                            border: none;
+                        }
+
+                        .btn {
+                            width: 135px;
+                            height: 133px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.3s ease;
+                            background: url(../images/section01/section01-btn.png) no-repeat center;
+                        }
+
+                        .btn:hover {
+                            background: url(../images/section01/section01-btn-hover.png) no-repeat center;
+                        }
+                    }
+
+                    .mail,
+                    .mail a {
+                        text-decoration: none;
+                        margin-top: 30px;
+                        font-family: 'Pixeleum 48';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 42px;
+                        text-align: right;
+                        letter-spacing: 0.045em;
+                        color: #FFFFFF;
+
+                    }
+                }
+            }
+
+            .pp {
+                margin-top: 22px;
+                padding-bottom: 22px;
+                width: 100%;
+                text-align: center;
+
+                a {
+                    font-family: 'Pixeleum 48';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: 0.045em;
+                    background: linear-gradient(144.23deg, #FFE42B 14.88%, #FFBC11 86.41%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}
